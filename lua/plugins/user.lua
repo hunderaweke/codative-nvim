@@ -1,5 +1,3 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
 -- You can also add or configure plugins by creating files in this `plugins/` folder
 -- Here are some examples:
 
@@ -21,26 +19,39 @@ return {
   {
     "goolord/alpha-nvim",
     opts = function(_, opts)
+      local icons = require "icons"
+      local function button(sc, txt, keybind, keybind_opts)
+        local b = opts.button(sc, txt, keybind, keybind_opts)
+        b.opts.hl_shortcut = "Include"
+        return b
+      end
       -- customize the dashboard header
       opts.section.header.val = {
-        " █████  ███████ ████████ ██████   ██████",
-        "██   ██ ██         ██    ██   ██ ██    ██",
-        "███████ ███████    ██    ██████  ██    ██",
-        "██   ██      ██    ██    ██   ██ ██    ██",
-        "██   ██ ███████    ██    ██   ██  ██████",
-        " ",
-        "    ███    ██ ██    ██ ██ ███    ███",
-        "    ████   ██ ██    ██ ██ ████  ████",
-        "    ██ ██  ██ ██    ██ ██ ██ ████ ██",
-        "    ██  ██ ██  ██  ██  ██ ██  ██  ██",
-        "    ██   ████   ████   ██ ██      ██",
+        "                                                     ",
+        "  ███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗ ",
+        "  ████╗  ██║██╔════╝██╔═══██╗██║   ██║██║████╗ ████║ ",
+        "  ██╔██╗ ██║█████╗  ██║   ██║██║   ██║██║██╔████╔██║ ",
+        "  ██║╚██╗██║██╔══╝  ██║   ██║╚██╗ ██╔╝██║██║╚██╔╝██║ ",
+        "  ██║ ╚████║███████╗╚██████╔╝ ╚████╔╝ ██║██║ ╚═╝ ██║ ",
+        "  ╚═╝  ╚═══╝╚══════╝ ╚═════╝   ╚═══╝  ╚═╝╚═╝     ╚═╝ ",
+        "                                                     ",
+      }
+      opts.section.buttons.val = {
+        button("f", icons.ui.Files .. " Find file", ":Telescope find_files <CR>"),
+        button("n", icons.ui.NewFile .. " New file", ":ene <BAR> startinsert <CR>"),
+        button("p", icons.git.Repo .. " Find project", ":lua require('telescope').extensions.projects.projects()<CR>"),
+        button("r", icons.ui.History .. " Recent files", ":Telescope oldfiles <CR>"),
+        button("t", icons.ui.Text .. " Find text", ":Telescope live_grep <CR>"),
+        button("c", icons.ui.Gear .. " Config", ":e ~/.config/nvim/init.lua <CR>"),
+        button("q", icons.ui.SignOut .. " Quit", ":qa<CR>"),
+        button("l", icons.misc.CircuitBoard .. " Leecode", ":Leet<CR>"),
       }
       return opts
     end,
   },
 
   -- You can disable default plugins as follows:
-  { "max397574/better-escape.nvim", enabled = false },
+  { "max397574/better-escape.nvim", enabled = true },
 
   -- You can also easily customize additional setup of plugins that is outside of the plugin's setup call
   {
