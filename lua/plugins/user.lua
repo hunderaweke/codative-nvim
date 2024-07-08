@@ -49,7 +49,12 @@ return {
       return opts
     end,
   },
-
+  {
+    "iamcco/markdown-preview.nvim",
+    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+    ft = { "markdown" },
+    build = function() vim.fn["mkdp#util#install"]() end,
+  },
   -- You can disable default plugins as follows:
   { "max397574/better-escape.nvim", enabled = true },
 
