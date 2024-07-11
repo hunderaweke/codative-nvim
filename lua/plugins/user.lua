@@ -49,6 +49,13 @@ return {
       return opts
     end,
   },
+  {
+    "stevearc/oil.nvim",
+    opts = {},
+    -- Optional dependencies
+    -- dependencies = { "echasnovski/mini.icons" },
+    dependencies = { "nvim-tree/nvim-web-devicons" }, -- use if prefer nvim-web-devicons
+  },
   { "ellisonleao/glow.nvim", config = true, cmd = "Glow" },
   -- You can disable default plugins as follows:
   { "max397574/better-escape.nvim", enabled = true },
