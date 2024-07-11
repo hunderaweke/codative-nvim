@@ -14,7 +14,6 @@ return {
   { import = "astrocommunity.note-taking.global-note-nvim" },
   { import = "astrocommunity.note-taking.obsidian-nvim" },
   { import = "astrocommunity.code-runner.sniprun" },
-  { import = "astrocommunity.file-explorer.telescope-file-browser" },
   { import = "astrocommunity.git.neogit" },
   -- import/override with your plugins folder
 }
