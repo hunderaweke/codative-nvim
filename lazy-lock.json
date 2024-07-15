@@ -1,6 +1,5 @@
 {
   "AstroNvim": { "branch": "main", "commit": "bc2c7c56f60fe1970da38d4b0cbe29d7a0e35abd" },
-  "ChatGPT.nvim": { "branch": "main", "commit": "f081338f07216a46d3915ce46c1fcb083bcb5016" },
   "Comment.nvim": { "branch": "master", "commit": "e30b7f2008e52442154b66f7c519bfd2f1e32acb" },
   "LuaSnip": { "branch": "master", "commit": "03c8e67eb7293c404845b3982db895d59c0d1538" },
   "aerial.nvim": { "branch": "master", "commit": "4d10acbcb760802ea74381ac3ed98cbb6e5f7805" },
@@ -69,8 +68,8 @@
   "telescope.nvim": { "branch": "0.1.x", "commit": "a0bbec21143c7bc5f8bb02e0005fa0b982edc026" },
   "todo-comments.nvim": { "branch": "main", "commit": "313b04e5b02d29ab9275c9295ff5e2b73921b0eb" },
   "toggleterm.nvim": { "branch": "main", "commit": "066cccf48a43553a80a210eb3be89a15d789d6e6" },
-  "trouble.nvim": { "branch": "main", "commit": "4453fea6bb597830fbd58d2c484612f37b97bd8c" },
   "venv-selector.nvim": { "branch": "regexp", "commit": "9cbb76e10abed4fff32d015472e7996fd999c996" },
   "vim-illuminate": { "branch": "master", "commit": "5eeb7951fc630682c322e88a9bbdae5c224ff0aa" },
+  "vim-tmux-navigator": { "branch": "master", "commit": "5b3c701686fb4e6629c100ed32e827edf8dad01e" },
   "which-key.nvim": { "branch": "main", "commit": "0539da005b98b02cf730c1d9da82b8e8edb1c2d2" }
 }
