@@ -9,11 +9,11 @@ return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.go" },
-  { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.game.leetcode-nvim" },
   { import = "astrocommunity.note-taking.global-note-nvim" },
   { import = "astrocommunity.note-taking.obsidian-nvim" },
   { import = "astrocommunity.code-runner.sniprun" },
   { import = "astrocommunity.git.neogit" },
+  -- { import = "astrocommunity.terminal-integration.vim-tmux-navigator" },
   -- import/override with your plugins folder
 }
