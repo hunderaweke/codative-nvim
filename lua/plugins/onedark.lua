@@ -2,7 +2,7 @@ return {
   "olimorris/onedarkpro.nvim",
   opts = {
     options = {
-      highlight_inactive_windows = true,
+      highlight_inactive_windows = false,
     },
     colors = {
       onedark_dark = { bg = "#090f13" },

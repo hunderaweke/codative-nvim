@@ -7,7 +7,6 @@
 ---@type LazySpec
 return {
   "AstroNvim/astrocommunity",
-  { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.game.leetcode-nvim" },
   -- { import = "astrocommunity.terminal-integration.vim-tmux-navigator" },
   -- import/override with your plugins folder
