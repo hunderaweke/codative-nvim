@@ -8,7 +8,6 @@
 return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.pack.lua" },
-  { import = "astrocommunity.pack.go" },
   { import = "astrocommunity.game.leetcode-nvim" },
   -- { import = "astrocommunity.terminal-integration.vim-tmux-navigator" },
   -- import/override with your plugins folder

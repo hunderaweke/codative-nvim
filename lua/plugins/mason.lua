@@ -9,7 +9,8 @@ return {
     opts = {
       ensure_installed = {
         "lua_ls",
-        "pylsp",
+        "pyright",
+        "gopls",
         -- add more arguments for adding more language servers
       },
     },
@@ -21,7 +22,11 @@ return {
     opts = {
       ensure_installed = {
         "stylua",
-        "pylsp",
+        "black",
+        "isort",
+        "gopls",
+        "gofumt",
+        "goimports",
         -- add more arguments for adding more null-ls sources
       },
     },
@@ -32,6 +37,8 @@ return {
     opts = {
       ensure_installed = {
         "python",
+        "go",
+        "lua",
         -- add more arguments for adding more debuggers
       },
     },
