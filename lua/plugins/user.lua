@@ -58,6 +58,7 @@ return {
   },
   { "ellisonleao/glow.nvim", config = true, cmd = "Glow" },
   -- You can disable default plugins as follows:
+  { "wintermute-cell/gitignore.nvim" },
   { "max397574/better-escape.nvim", enabled = true },
   { "LinArcX/telescope-command-palette.nvim" },
   -- You can also easily customize additional setup of plugins that is outside of the plugin's setup call
